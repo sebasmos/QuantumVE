@@ -1,26 +1,23 @@
 # Machine learning for quantum mechanics
 
-Update `requirements.txt` using `conda list -e>requirements.txt`
-
+Update `requirements.txt` using `conda list -e>requirements.txt`.
 
 ## Papers
 
 1. [Machine learning toolbox for quantum many body physics](https://www.nature.com/articles/s254-021-00285-7)
-
 2. [NetKet: A machine learning toolkit for many-body quantum systems](https://www.sciencedirect.com/science/article/pii/S2352711019300974)
-
 3. [Neural-network quantum state tomography - 3d reconstruct the full quantum state from simple measurements](https://www.nature.com/articles/s41567-018-0048-5)
-4. [Training deep quantum neural networks](https://www.nature.com/articles/s41467-020-14454-2)
-
+4. [Training deep quantum neural networks](https://www.nature.com/articles/s41467-020-14454-2) and [repository on Github](https://github.com/qigitphannover/DeepQuantumNeuralNetworks)
 
 ## Environments
 1. [Machine Learning for Many-Body Quantum Systems using netket](https://www.netket.org/)
 2. [Netket repository on Github](https://github.com/netket/netket)
 3. [Microsoft Azure - quantum module](https://docs.microsoft.com/es-es/azure/quantum/) and [repository on Github](https://github.com/microsoft/Quantum)
-4. [Quantum - tensorflow](https://github.com/tensorflow/quantum) and [repositry of Github](https://github.com/qigitphannover/DeepQuantumNeuralNetworks)
-
+4. [Quantum - tensorflow](https://www.tensorflow.org/quantum) and [repositry of Github](https://github.com/tensorflow/quantum)
+5. [Circ](https://github.com/quantumlib/Cirq) and [API on TensorFlow](https://www.tensorflow.org/quantum/api_docs/python/tfq)
 ## To complete
-2. https://www.netket.org/tutorials.html 
+1. https://www.netket.org/tutorials.html 
+2. https://github.com/tensorflow/quantum/tree/master/docs/tutorials  and https://www.tensorflow.org/quantum/tutorials/hello_many_worlds 
 
 
 
