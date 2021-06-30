@@ -1,9 +1,14 @@
 # QuantumDeep
 
+Update `requirements.txt` using `conda list -e>requirements.txt`
+
 
 # Papers
 
 1. [Machine learning toolbox for quantum many body physics](https://www.nature.com/articles/s42254-021-00285-7)
+2. [Machine Learning for Many-Body Quantum Systems](https://www.netket.org/)
+3. [NetKet: A machine learning toolkit for many-body quantum systems](https://www.sciencedirect.com/science/article/pii/S2352711019300974)
+4. [Neural-network quantum state tomography - 3d reconstruct the full quantum state from simple measurements](https://www.nature.com/articles/s41567-018-0048-5)
 
 
 # Installation - [Qiskit](https://qiskit.org/documentation/install.html)
