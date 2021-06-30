@@ -1,6 +1,12 @@
 # QuantumDeep
 
-### Installation https://qiskit.org/documentation/install.html
+
+# Papers
+
+1. [Machine learning toolbox for quantum many body physics](https://www.nature.com/articles/s42254-021-00285-7)
+
+
+# Installation - [Qiskit](https://qiskit.org/documentation/install.html)
 
 1. Create new environment on Anaconda/Docker.
 
