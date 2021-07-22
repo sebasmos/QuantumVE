@@ -9,12 +9,17 @@ Update `requirements.txt` using `conda list -e>requirements.txt`.
 3. [Neural-network quantum state tomography - 3d reconstruct the full quantum state from simple measurements](https://www.nature.com/articles/s41567-018-0048-5)
 4. [Training deep quantum neural networks](https://www.nature.com/articles/s41467-020-14454-2) and [repository on Github](https://github.com/qigitphannover/DeepQuantumNeuralNetworks)
 
+## CERN 
+
+1. [Quantum Machine learning 2021 by Maria Schuld ] (https://indico.cern.ch/event/893116/timetable/?print=1&view=standard): Based on [PennyLane](https://pennylane.ai/qml/whatisqml.html)
+
 ## Environments
 1. [Machine Learning for Many-Body Quantum Systems using netket](https://www.netket.org/)
 2. [Netket repository on Github](https://github.com/netket/netket)
 3. [Microsoft Azure - quantum module](https://docs.microsoft.com/es-es/azure/quantum/) and [repository on Github](https://github.com/microsoft/Quantum)
 4. [Quantum - tensorflow](https://www.tensorflow.org/quantum) and [repositry of Github](https://github.com/tensorflow/quantum)
 5. [Circ](https://github.com/quantumlib/Cirq) and [API on TensorFlow](https://www.tensorflow.org/quantum/api_docs/python/tfq)
+6. [PennyLane](https://pennylane.ai/)
 ## To complete
 1. https://www.netket.org/tutorials.html 
 2. https://github.com/tensorflow/quantum/tree/master/docs/tutorials  and https://www.tensorflow.org/quantum/tutorials/hello_many_worlds 
