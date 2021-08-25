@@ -20,3 +20,4 @@ tensorboard-plugin-wit==1.8.0
 tensorflow==2.4.1
 tensorflow-estimator==2.4.0
 tensorflow-quantum==0.5.1
+cvxopt == 1.2.6 

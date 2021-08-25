@@ -1,5 +1,9 @@
 # Machine learning for quantum mechanics
 
+For Qiskit:
+
+`pip install cvxopt --no-binary cvxopt`
+
 Update `requirements.txt` using `conda list -e>requirements.txt`.
 
 ## Papers
