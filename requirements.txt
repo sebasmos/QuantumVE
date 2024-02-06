@@ -6,13 +6,6 @@ cirq-core==0.11.0
 cirq-google==0.11.0
 numpy==1.19.5
 pandas==1.2.5
-qiskit==0.24.0
-qiskit-aer==0.7.6
-qiskit-aqua==0.8.2
-qiskit-ibmq-provider
-qiskit-ignis==0.5.2
-qiskit-terra==0.16.4
-scikit-learn==0.24.1
 scipy==1.7.0
 tensorboard==2.5.0
 tensorboard-data-server==0.6.1
@@ -21,3 +14,8 @@ tensorflow==2.4.1
 tensorflow-estimator==2.4.0
 tensorflow-quantum==0.5.1
 cvxopt == 1.2.6 
+qiskit==0.45.2
+qiskit_machine_learning==0.45.2
+qiskit_algorithms == 0.7.1
+qiskit-ibm-runtime == 0.17.0
+qiskit-aer==0.13.2

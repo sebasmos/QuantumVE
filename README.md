@@ -1,24 +1,28 @@
 # Machine learning for quantum mechanics
-<hr>
 
-For Qiskit:
 
-`pip install cvxopt --no-binary cvxopt`
+### 🔧Install environment
 
-Update `requirements.txt` as `conda list -e>requirements.txt`
+1. Create environment with conda:
 
-<hr>
+```
+conda create -n quantumdeep python=3.10 -y
+conda activate quantumdeep
+```
 
-## Installation - [Qiskit](https://qiskit.org/documentation/install.html)
+2. Install dependencies
 
-1. Create new environment on Anaconda/Docker.
+```
+git clone https://github.com/sebasmos/QuantumDeep.git
+cd QuantumDeep
+pip install -r requirement.txt
+```
 
-2. conda activate QuantumDeep
+### Contribute
 
-3. pip install  qiskit numpy jupyterlab matplotlib qiskit-ibm-provider
+1. Folder `Focker-Plank-Solution` contains the Fokker-Planck which examplifies the one-dimensional Fokker-Planck equation, including parameter inference, numerical spectrum calculation with varied boundary conditions, and numerical simulation on finite domains. This module is invaluable for analyzing diverse phenomena governed by the Fokker-Planck equation, enhancing research across scientific and engineering disciplines. It draws inspiration from the repository by Julian Kappler at https://github.com/juliankappler/fokker-planck/tree/main.
 
-4. jupyter lab
-
+Tutorials under Focker-Plank Solution folder where inspired by [juliankappler](https://github.com/juliankappler/fokker-planck)
 
 ## Papers
 
@@ -45,11 +49,9 @@ Update `requirements.txt` as `conda list -e>requirements.txt`
 ## To complete
 
 1. [Netket Tutorials](https://www.netket.org/tutorials.html )
-2. [Quantum Tensorflow](https://github.com/tensorflow/quantum/tree/master/docs/tutorials)
+1. [Quantum Tensorflow](https://github.com/tensorflow/quantum/tree/master/docs/tutorials)
 
-5. sudo pip3.7 install --upgrade --force-reinstall quiskit-ibmq-provider
-
-6. Get token [here](https://quantum-computing.ibm.com/account )
+1. Get token [here](https://quantum-computing.ibm.com/account )
 
 Text-based tutorials and sample code [[Link](https://quantum-computing.ibm.com/lab/docs/iql/first-circuit#code-your-first-quantum-circuit )]
 
@@ -58,4 +60,18 @@ IBM Quantum Computing [[Link](https://quantum-computing.ibm.com/)]
 ```
 pip install qiskit numpy jupyterlab matplotlib qiskit-ibmq-provider
 ```
+
+
+## License
+
+QUANTUMDEEP is **free** and **open source**, released under GNU GENERAL PUBLIC LICENSE
+
+
+## Contributing to QUANTUMDEEP
+
+Feel free to contact me at sebasmos@mit.edu 
+
+Feel free to participate in QUANTUMDEEP's development!  Start by forking the QUANTUMDEEP repository, and submit your contributions through a [pull request](https://help.github.com/articles/about-pull-requests/). Every contributor will be recognized as an author in the releases. Noteworthy contributors, especially those introducing new plugins or functionalities, will be featured on the QUANTUMDEEP conference website.
+
+We also appreciate bug reports, suggestions for new features, enhancements, and even sharing links to exciting projects or applications built using QUANTUMDEEP. Your engagement enriches the QUANTUMDEEP community!
 
