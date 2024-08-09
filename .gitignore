@@ -3,7 +3,6 @@
 .ipynb_checkpoints
 *.ipynb_checkpoints
 **/*.ipynb_checkpoints
-**/*.txt
 **/*.jpg
 *.zip
 **/*.zip/
@@ -20,7 +19,7 @@
 **/*.jsonl
 *.jsonl
 *.zip
-*.txt
+
 **/*.pth.tar
 *.pth.tar
 **/*.tiff
