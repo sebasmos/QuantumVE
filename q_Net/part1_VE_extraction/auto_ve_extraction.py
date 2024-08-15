@@ -95,7 +95,8 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, fbeta_score
 from sklearn.metrics import precision_score, recall_score, f1_score, fbeta_score
 import numpy as np
-
+import torch.multiprocessing as mp
+mp.set_sharing_strategy('file_system')
 
 imagenet_mean = np.array([0.485, 0.456, 0.406])
 imagenet_std = np.array([0.229, 0.224, 0.225])
@@ -103,7 +104,7 @@ imagenet_std = np.array([0.229, 0.224, 0.225])
 # Parameters
 model_name = "eva02_large_patch14_448_embeddings_imageNet"#"mobilenetv4_r448" # or any other model name
 batch_sizes = [8, 16, 32, 64]
-embedding_sizes = [64,128,256,1024]
+embedding_sizes = [2,4,8,16,32]#[64,128,256,1024]
 data_path = '../data/ABGQI_mel_spectrograms'
 device = 'cuda'
 
@@ -351,7 +352,7 @@ def create_args(batch_size, model_name, embedding_size, output_dir, data_path, d
                         help='Perform evaluation only')
     parser.add_argument('--dist_eval', action='store_true', default=False,
                         help='Enabling distributed evaluation')
-    parser.add_argument('--num_workers', default=10, type=int)
+    parser.add_argument('--num_workers', default=4, type=int)
     parser.add_argument('--dist_on_itp', action='store_true')
     args, unknown = parser.parse_known_args()
     return args

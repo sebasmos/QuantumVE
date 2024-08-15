@@ -1,3 +1,7 @@
+*.wav 
+**/*.wav 
+*.DS_Store 
+**/*.DS_Store
 *.tar
 **/*.tar
 .ipynb_checkpoints
