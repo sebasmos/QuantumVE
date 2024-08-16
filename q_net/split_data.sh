@@ -40,8 +40,8 @@ kcross_dir="${target_dir}/train"
 test_dir="${target_dir}/val"
 
 # Create target directories
-mkdir -p "${kcross_dir}"
-mkdir -p "${test_dir}"
+mkdir -p "${kcross_dir}" || { echo "Failed to create train directory"; exit 1; }
+mkdir -p "${test_dir}" || { echo "Failed to create val directory"; exit 1; }
 
 # Loop through each class directory
 for class_dir in "${source_dir}"/*; do
@@ -49,8 +49,8 @@ for class_dir in "${source_dir}"/*; do
         class=$(basename "${class_dir}")
         
         # Create class directories in target directories
-        mkdir -p "${kcross_dir}/${class}"
-        mkdir -p "${test_dir}/${class}"
+        mkdir -p "${kcross_dir}/${class}" || { echo "Failed to create class directory in train: ${class}"; exit 1; }
+        mkdir -p "${test_dir}/${class}" || { echo "Failed to create class directory in val: ${class}"; exit 1; }
 
         # Get list of all images in class directory
         images=("${class_dir}"/*.png)
@@ -67,12 +67,12 @@ for class_dir in "${source_dir}"/*; do
 
         # Copy split_ratio% of images to kcross directory
         for ((i = 0; i < kcross_count; i++)); do
-            cp "${images[$i]}" "${kcross_dir}/${class}/"
+            cp "${images[$i]}" "${kcross_dir}/${class}/" || { echo "Failed to copy file ${images[$i]} to ${kcross_dir}/${class}/"; exit 1; }
         done
 
         # Copy remaining images to test directory
         for ((i = kcross_count; i < total_images; i++)); do
-            cp "${images[$i]}" "${test_dir}/${class}/"
+            cp "${images[$i]}" "${test_dir}/${class}/" || { echo "Failed to copy file ${images[$i]} to ${test_dir}/${class}/"; exit 1; }
         done
     fi
 done
