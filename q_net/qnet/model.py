@@ -1,7 +1,15 @@
 import torch
 from torch import nn
 
-
+def reset_weights(m):
+    '''
+    Try resetting model weights to avoid weight leakage.
+    '''
+    for layer in m.children():
+        if hasattr(layer, 'reset_parameters'):
+            print(f'Reset trainable parameters of layer = {layer}')
+            layer.reset_parameters()
+            
 class Classifier(nn.Module):
     def __init__(self, input_dim, hidden_units, num_classes, dropout_rate):
         super(Classifier, self).__init__()
