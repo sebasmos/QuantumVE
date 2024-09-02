@@ -27,10 +27,7 @@ from qnet.embeddings import *
 from qnet.model import *
 from qnet.utils import *
 
-"""
-python holdout_validation.py --data_path efficientnet_b3_1536_bs64 --model svc --total_num_seed 2
-python holdout_validation.py --data_path efficientnet_b3_1536_bs64 --model mlp --total_num_seed 2
-"""
+
 def reset_weights(m):
     '''
     Try resetting model weights to avoid weight leakage.
@@ -164,7 +161,7 @@ def main(args):
             X_train, y_train = train_dataset.features, train_dataset.labels
             X_test, y_test = val_dataset.features, val_dataset.labels
             
-            best_params = {'C': 10.3, 'gamma': 'scale', 'kernel': 'rbf'}
+            best_params = {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
             model = SVC(**best_params, probability=True, random_state=seed)
             
             start_train_time = time.time()
@@ -189,10 +186,12 @@ def main(args):
         f1 = f1_score(all_labels, all_preds, average='macro')
         precision = precision_score(all_labels, all_preds, average='macro')
         recall = recall_score(all_labels, all_preds, average='macro')
+        f1_075 = compute_f0_75_score_mean(all_labels, all_preds)
 
         metrics = {
             'Accuracy': accuracy,
             'F1 Score': f1,
+            'F0.75 Score': f1_075,
             'Precision': precision,
             'Recall': recall,
             'Training time': training_time,
