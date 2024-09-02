@@ -107,8 +107,6 @@ def merge_and_split_data(train_csv, val_csv, output_train_csv, output_val_csv, t
 
 def main(args):
     for seed in range(args.total_num_seed):
-        seed_everything(seed)
-
         print(f'SEED {seed}')
         print('--------------------------------')
 
@@ -117,12 +115,7 @@ def main(args):
         
         seed_dir = os.path.join(f"./{args.output_dir}", f"{args.model}_{args.data_path}", f"seed_{seed}")
         os.makedirs(seed_dir, exist_ok=True)
-
-        # output_train_csv = os.path.join(seed_dir, 'train_split.csv')
-        # output_val_csv = os.path.join(seed_dir, 'val_split.csv')
-
-        # merge_and_split_data(train_csv, val_csv, output_train_csv, output_val_csv, test_size=0.1, random_state=seed)
-
+        
         train_dataset = EmbeddingDataset(train_csv, shuffle=True)  # Shuffle data
         val_dataset = EmbeddingDataset(val_csv, shuffle=False)
 
@@ -130,6 +123,8 @@ def main(args):
         val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False)
 
         if args.model == 'mlp':
+            torch.manual_seed(seed)
+            np.random.seed(seed)
             num_columns = train_dataset.data.shape[1] - 1
             model = Classifier(input_dim=num_columns, hidden_units=256, num_classes=6, dropout_rate=0.5)
             model.apply(reset_weights)
