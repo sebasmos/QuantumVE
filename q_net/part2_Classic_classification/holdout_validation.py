@@ -28,8 +28,6 @@ from qnet.model import *
 from qnet.utils import *
 
 
-
-
 def main(args):
     for seed in range(args.total_num_seed):
         print(f'SEED {seed}')
@@ -51,7 +49,7 @@ def main(args):
             torch.manual_seed(seed)
             np.random.seed(seed)
             num_columns = train_dataset.data.shape[1] - 1
-            model = Classifier(input_dim=num_columns, hidden_units=256, num_classes=6, dropout_rate=0.5)
+            model = Classifier(input_dim=num_columns, hidden_units=256, num_classes=args.num_classes, dropout_rate=0.5)
             model.apply(reset_weights)
             optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
             criterion = nn.CrossEntropyLoss()
@@ -89,7 +87,7 @@ def main(args):
             X_train, y_train = train_dataset.features, train_dataset.labels
             X_test, y_test = val_dataset.features, val_dataset.labels
             
-            best_params = {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
+            best_params = {'C': 3, 'gamma': 0.01, 'kernel': 'rbf'}
             model = SVC(**best_params, probability=True, random_state=seed)
             
             start_train_time = time.time()
@@ -136,7 +134,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Train a simple MLP or SVC with K-Fold Cross Validation")
     parser.add_argument('--data_path', type=str, default='./data', help='Path to the dataset directory containing CSV files')
     parser.add_argument('--output_dir', type=str, default='output', help='Directory to save output metrics and models')
-    parser.add_argument('--total_num_seed', type=int, default=3, help='seed')
+    parser.add_argument('--total_num_seed', type=int, default=20, help='seed')
+    parser.add_argument('--num_classes', type=int, default=6, help='Number of classes')
     parser.add_argument('--num_epochs', type=int, default=100, help='Number of training epochs (only applicable for MLP)')
     parser.add_argument('--batch_size', type=int, default=64, help='Batch size for training (only applicable for MLP)')
     parser.add_argument('--learning_rate', type=float, default=1e-3, help='Learning rate for the optimizer (only applicable for MLP)')
