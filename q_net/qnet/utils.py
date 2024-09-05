@@ -6,7 +6,6 @@ import numpy as np
 import torch
 import pandas as pd
 
-
 def save_predictions(args, model_name, seed, y_test, y_pred, model, metrics):
     """
     Save predicted and true values as CSV files in a specified folder.
@@ -85,7 +84,7 @@ def merge_and_split_data(train_csv, val_csv, output_train_csv, output_val_csv, t
 
     print("Data Randomly Shuffled")
     
-def consolidate_and_average_metrics(args):
+def consolidate_and_average_metrics(args, experiment_folder, seed_dir):
     """
     Read the metrics for all seeds, consolidate them into a single CSV file,
     and then compute and save the average metrics along with variance.
@@ -97,17 +96,18 @@ def consolidate_and_average_metrics(args):
     num_seeds = args.total_num_seed
     
     for seed in range(num_seeds):
-        seed_metrics_path = os.path.join(f"./{args.output_dir}",f"{args.model}_{args.data_path}", f"seed_{seed}", f"metrics_seed_{seed}.csv")
+        seed_path_full =  os.path.join(seed_dir,f"seed_{seed}")
+        seed_metrics_path = os.path.join(seed_path_full, f"metrics_seed_{seed}.csv")
         if os.path.exists(seed_metrics_path):
             metrics_df = pd.read_csv(seed_metrics_path)
             all_metrics.append(metrics_df)
         else:
-            print(f"Metrics for seed {seed} not found at {seed_metrics_path}. Skipping this seed.")
-    
+            print(f"Metrics for seed {seed} not found at {seed_path_full}. Skipping this seed.")
+
     if all_metrics:
         consolidated_metrics = pd.concat(all_metrics, axis=0)
         
-        consolidated_metrics_path = os.path.join(f"./{args.output_dir}", f"{args.model}_{args.data_path}", f'consolidated_metrics_{args.model}.csv')
+        consolidated_metrics_path = os.path.join(f"./{args.output_dir}", f"{experiment_folder}", f'consolidated_metrics_{args.model}.csv')
         consolidated_metrics.to_csv(consolidated_metrics_path, index=False)
         
         average_metrics = consolidated_metrics.mean(axis=0)
@@ -118,7 +118,7 @@ def consolidate_and_average_metrics(args):
             combined_metrics[f"{col}_mean"] = [average_metrics[col]]
             combined_metrics[f"{col}_variance"] = [variance_metrics[col]]
         
-        average_metrics_path = os.path.join(f"./{args.output_dir}", f"{args.model}_{args.data_path}", f'average_metrics_{args.model}.csv')
+        average_metrics_path = os.path.join(f"./{args.output_dir}", f"{experiment_folder}", f'average_metrics_{args.model}.csv')
         combined_metrics.to_csv(average_metrics_path, index=False)
         
         print(f"Consolidated metrics saved at {consolidated_metrics_path}")

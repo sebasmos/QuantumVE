@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 from torch import nn
 from torch.utils.data import DataLoader, Dataset
+from sklearn.decomposition import PCA
 
 class EmbeddingDataset_stateless(Dataset):
     def __init__(self, csv_file):
@@ -35,3 +36,9 @@ class EmbeddingDataset(Dataset):
         feature = torch.tensor(self.features[idx], dtype=torch.float32)
         label = torch.tensor(self.labels[idx], dtype=torch.long)
         return feature, label
+    
+
+def apply_pca(X, variance_threshold=0.95):
+    pca = PCA(n_components=variance_threshold)
+    X_reduced = pca.fit_transform(X)
+    return X_reduced, pca

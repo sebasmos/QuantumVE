@@ -5,6 +5,11 @@ from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 import numpy as np
+import os
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.metrics import confusion_matrix
 
 def plot_multiclass_roc_curve(all_labels, all_predictions, EXPERIMENT_NAME="."):
     # Step 1: Label Binarization
@@ -72,4 +77,40 @@ def plot_multiclass_roc_curve(all_labels, all_predictions, EXPERIMENT_NAME="."):
     plt.title("Extension of Receiver Operating Characteristic\n to One-vs-Rest multiclass")
     plt.legend()
     plt.savefig(f'{EXPERIMENT_NAME}/roc_curve.png')
-    # plt.show()
+
+def plot_losses(train_losses, val_losses, EXPERIMENT_NAME="."):
+    epochs = range(1, len(train_losses) + 1)
+
+    plt.figure(figsize=(8, 6))
+
+    plt.plot(epochs, train_losses, 'bo-', label='Training Loss')
+    plt.plot(epochs, val_losses, 'ro-', label='Validation Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.title('Training and Validation Loss')
+    plt.legend()
+
+    plt.tight_layout()
+    os.makedirs(EXPERIMENT_NAME, exist_ok=True)
+    plt.savefig(os.path.join(EXPERIMENT_NAME, 'losses.png'))
+    plt.close()
+
+def save_confusion_matrix(all_labels, all_preds, unique_classes, experiment_name, phase):
+    cm = confusion_matrix(all_labels, all_preds)
+    conf_matrix = pd.DataFrame(cm, index=unique_classes, columns=unique_classes)
+
+    plt.figure(figsize=(5, 4))
+    ax = sns.heatmap(conf_matrix, annot=True, fmt='.1f', annot_kws={"size": 8},
+                     cmap="crest", linewidths=0.1, cbar=True)
+
+    ax.set_xlabel('Predicted Labels')
+    ax.set_ylabel('True Labels')
+
+    ax.set_xticks(range(len(unique_classes)))
+    ax.set_yticks(range(len(unique_classes)))
+
+    ax.set_xticks([i + 0.5 for i in range(len(unique_classes))])
+    ax.set_yticks([i + 0.5 for i in range(len(unique_classes))])
+
+    plt.savefig(f'{experiment_name}/confusion_matrix_{phase}.png', dpi=300, bbox_inches='tight')
+    plt.close()
