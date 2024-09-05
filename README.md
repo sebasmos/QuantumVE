@@ -75,9 +75,13 @@ Feel free to participate in QuantumVE's development!  Start by forking the Quant
 
 We also appreciate bug reports, suggestions for new features, enhancements, and even sharing links to exciting projects or applications built using QuantumVE. Your engagement enriches the QuantumVE community!
 
+## Acknowledgements 
+
+Project funded by Google Reseach Awards Program.
+
 ## License
 
-QuantumVE is **free** and **open source**, released under MIT License.
+QuantumVE is **free** and **open source**, released under[LICENSE](LICENSE) for details.
 
 
 Please Cite as 
