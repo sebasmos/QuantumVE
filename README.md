@@ -65,9 +65,6 @@ pip install qiskit numpy jupyterlab matplotlib qiskit-ibmq-provider
 
 Q_Net was sponsored by Google Cloud Research Credits and serves as baseline for [Qubico](https://github.com/Qubico-Hack)
 
-## License
-
-QuantumVE is **free** and **open source**, released under GNU GENERAL PUBLIC LICENSE
 
 
 ## Contributing to QuantumVE
@@ -78,3 +75,21 @@ Feel free to participate in QuantumVE's development!  Start by forking the Quant
 
 We also appreciate bug reports, suggestions for new features, enhancements, and even sharing links to exciting projects or applications built using QuantumVE. Your engagement enriches the QuantumVE community!
 
+## License
+
+QuantumVE is **free** and **open source**, released under MIT License.
+
+
+Please Cite as 
+
+```
+@misc{cajas_quantumve_2024,
+  author       = {Sebastián Andrés Cajas Ordóñez and Carlos Duran and Luis Torres},
+  title        = {QuantumVE: A versatile platform for quantum embeddings},
+  year         = {2024},
+  url          = {https://github.com/sebasmos/QuantumVE},
+  note         = {GitHub repository},
+  version      = {v1.0},
+  howpublished = {\url{https://github.com/sebasmos/QuantumVE}},
+}
+```
