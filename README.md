@@ -1,51 +1,32 @@
-## Vector Embeddings for Quantum Mechanics (QuantumVE) 
+## Vector Embeddings for Quantum Mechanics (QuantumScripts) 
 
 ### Install environment
 
 1. Create environment with conda:
 
 ```
-conda create -n QuantumVE python=3.10 -y
-conda activate QuantumVE
+conda create -n QuantumScripts python=3.10 -y
+conda activate QuantumScripts
 ```
 
 2. Install dependencies
 
 ```
-git clone https://github.com/sebasmos/QuantumVE.git
-cd QuantumVE
+git clone https://github.com/sebasmos/QuantumScripts.git
+cd QuantumScripts
 pip install -r requirement.txt
 ```
 
-## Contributing to QuantumVE
+## Contributing to QuantumScripts
 
 Feel free to contact me at sebasmos@mit.edu 
 
-Feel free to participate in QuantumVE's development!  Start by forking the QuantumVE repository, and submit your contributions through a [pull request](https://help.github.com/articles/about-pull-requests/). Every contributor will be recognized as an author in the releases. Noteworthy contributors, especially those introducing new plugins or functionalities, will be featured on the QuantumVE conference website.
+Feel free to participate in QuantumScripts's development!  Start by forking the QuantumScripts repository, and submit your contributions through a [pull request](https://help.github.com/articles/about-pull-requests/). Every contributor will be recognized as an author in the releases. Noteworthy contributors, especially those introducing new plugins or functionalities, will be featured on the QuantumScripts conference website.
 
-We also appreciate bug reports, suggestions for new features, enhancements, and even sharing links to exciting projects or applications built using QuantumVE. Your engagement enriches the QuantumVE community!
-
-
-## Acknowledgements
-
-Q_Net was sponsored by Google Cloud Research Program and serves as baseline for [Qubico](https://github.com/Qubico-Hack)
+We also appreciate bug reports, suggestions for new features, enhancements, and even sharing links to exciting projects or applications built using QuantumScripts. Your engagement enriches the QuantumScripts community!
 
 
 ## License
 
-QuantumVE is **free** and **open source**, released under MIT License.
+QuantumScripts is **free** and **open source**, released under MIT License.
 
-
-Please Cite as 
-
-```
-@misc{cajas_quantumve_2024,
-  author       = {Sebastián Andrés Cajas Ordóñez and Carlos Duran and Luis Torres},
-  title        = {QuantumVE: A versatile platform for quantum embeddings},
-  year         = {2024},
-  url          = {https://github.com/sebasmos/QuantumVE},
-  note         = {GitHub repository},
-  version      = {v1.0},
-  howpublished = {\url{https://github.com/sebasmos/QuantumVE}},
-}
-```
