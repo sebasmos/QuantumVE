@@ -4,7 +4,6 @@
 
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 💻 **Dataset on HuggingFace**: [*online*](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
-- 🚀 **Extraction & Analysis Scripts**: *Explore the repository for tools and notebooks*
 
 ## Setting Up Your Environment
 
