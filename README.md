@@ -1,13 +1,19 @@
-## Vector Embeddings for Quantum Mechanics (QuantumVE) 
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
 
-### Install environment
+# QuantumVE: Quantum Embeddings for ML
 
-1. Create environment with conda:
+QuantumVE is a dataset featuring high-dimensional vector embeddings tailored for quantum mechanics research. 
 
-```
-conda create -n QuantumVE python=3.10 -y
-conda activate QuantumVE
-```
+- 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
+- 💻 **Dataset on HuggingFace**: [*online*](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
+- 🚀 **Extraction & Analysis Scripts**: *Explore the repository for tools and notebooks*
+
+## Setting Up Your Environment
+
+1. **Create a Conda Environment:**
+   ```bash
+   conda create -n QuantumVE python=3.10 -y
+   conda activate QuantumVE
 
 2. Install dependencies
 
@@ -28,8 +34,7 @@ We also appreciate bug reports, suggestions for new features, enhancements, and 
 
 ## Acknowledgements
 
-Q_Net was sponsored by Google Cloud Research Program and serves as baseline for [Qubico](https://github.com/Qubico-Hack)
-
+This work was supported by the Google Cloud Research Credits program under the explicit award number GCP19980904.
 
 ## License
 
@@ -42,7 +47,7 @@ Please Cite as
 @misc{cajas_quantumve_2025,
   author       = {Sebastián Andrés Cajas Ordóñez and Carlos Duran and Luis Torres},
   title        = {QuantumVE: A versatile platform for quantum embeddings},
-  year         = {2024},
+  year         = {2025},
   url          = {https://github.com/sebasmos/QuantumVE},
   note         = {GitHub repository},
   version      = {v1.0},
