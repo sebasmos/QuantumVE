@@ -1,8 +1,6 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
 
-# QuantumVE: Quantum Embeddings for ML
-
-QuantumVE is a dataset featuring high-dimensional vector embeddings tailored for quantum mechanics research. 
+# QuantumVE: Quantum Embeddings for Machine Learning
 
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 💻 **Dataset on HuggingFace**: [*online*](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
@@ -27,14 +25,14 @@ pip install -r requirement.txt
 
 Feel free to contact me at sebasmos@mit.edu 
 
-Feel free to participate in QuantumVE's development!  Start by forking the QuantumVE repository, and submit your contributions through a [pull request](https://help.github.com/articles/about-pull-requests/). Every contributor will be recognized as an author in the releases. Noteworthy contributors, especially those introducing new plugins or functionalities, will be featured on the QuantumVE conference website.
+Feel free to participate in QuantumVE's development!  Start by forking the QuantumVE repository, and submit your contributions through a [pull request](https://help.github.com/articles/about-pull-requests/). Every contributor will be recognized as an author in the releases. 
 
 We also appreciate bug reports, suggestions for new features, enhancements, and even sharing links to exciting projects or applications built using QuantumVE. Your engagement enriches the QuantumVE community!
 
 
 ## Acknowledgements
 
-This work was supported by the Google Cloud Research Credits program under the explicit award number GCP19980904.
+This work was supported by the Google Cloud Research Credits program under the award number GCP19980904.
 
 ## License
 
