@@ -9,7 +9,7 @@
 
 1. **Create a Conda Environment:**
    ```bash
-   conda create -n QuantumVE python=3.10 -y
+   conda create -n QuantumVE python=3.11.11 -y
    conda activate QuantumVE
 
 2. Install dependencies
