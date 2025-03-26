@@ -20,6 +20,8 @@ cd QuantumVE
 pip install -r requirement.txt
 ```
 
+3. [Ryzen devices] Install mpia via conda `conda install -c conda-forge mpi4py openmpi`, ensure mpi4py is `4.0.3 `
+
 ## Contributing to QuantumVE
 
 Feel free to contact me at sebasmos@mit.edu 
