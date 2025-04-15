@@ -1,6 +1,6 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
 
-# QuantumVE: Quantum Embeddings for Machine Learning
+# Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning
 
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 💻 **Dataset on HuggingFace**: [*online*](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
@@ -44,8 +44,8 @@ Please Cite as
 
 ```
 @misc{cajas_quantumve_2025,
-  author       = {Sebastián Andrés Cajas Ordóñez and Carlos Duran and Luis Torres},
-  title        = {QuantumVE: A versatile platform for quantum embeddings},
+  author       = {Sebastián Andrés Cajas Ordóñez, Luis Torres, Mario Bifulco, Carlos Duran, Cristian Bosch, Ricardo Simon Carbajo },
+  title        = {Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning},
   year         = {2025},
   url          = {https://github.com/sebasmos/QuantumVE},
   note         = {GitHub repository},
