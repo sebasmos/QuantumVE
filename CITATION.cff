@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  QuantumVE
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - family-names: "Cajas Ordóñez"
+    given-names: "Sebastián Andrés"
+    alias: sebasmos
+  - family-names: "Torres Torres"
+    given-names: "Luis"
+  - family-names: "Bifulco"
+    given-names: "Mario"
+  - family-names: "Duran"
+    given-names: "Carlos"
+  - family-names: "Bosch"
+    given-names: "Cristian"
+  - family-names: "Simón Carbajo"
+    given-names: "Ricardo"
+keywords:
+  - qsvm
+repository-code: 'https://github.com/sebasmos/QuantumVE'
+license: MIT
+date-released: '2025-04-14'
