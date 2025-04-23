@@ -6,7 +6,7 @@
 > 🚧 This repository is under submission to IEEE QCE 2024.
 > 
 > 📩 **The full code will be made publicly available upon paper acceptance.**
-
+> 🔒 The code is currently archived under embargo at Zenodo: [https://zenodo.org/records/15264568](https://zenodo.org/records/15264568). Access is available upon request for review purposes.
 
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 💻 **Dataset on HuggingFace**: [*online*](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
@@ -93,3 +93,4 @@ QuantumVE is **free** and **open source**, released under the [MIT License](http
   url = {https://github.com/sebasmos/QuantumVE},
   year = {2025}
 }
+```
