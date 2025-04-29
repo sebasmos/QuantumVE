@@ -1,7 +1,8 @@
 __pycache__/
 data/
 EXPERIMENTS/
-# *.csv
+*.csv
+**/*.csv
 *.zip
 #**/*.txt
 outputs/
