@@ -1,7 +1,7 @@
 [project]
 name = "qve"
 version = "0.1.0"
-description = "Quantum VE package"
+description = "Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning"
 authors = [{ name = "Sebastian Cajas", email = "scajasordonez@gmail.com" }]
 dependencies = [
     "scikit-learn==1.6.1",
@@ -16,8 +16,30 @@ dependencies = [
     "sympy==1.13.1",
     "joblib==1.4.2",
     "setuptools==75.1.0",
-    "scipy==1.14.1"
+    "scipy==1.14.1",
+    "git+https://github.com/openai/CLIP.git",
+    "ftfy",
+    "regex", 
+    "tqdm"
 ]
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+keywords = ["quantum machine learning", "vector embeddings", "SVM"]
+
+[project.urls]
+Repository = "https://github.com/sebasmos/quantumVE"
+"Bug Tracker" = "https://github.com/sebasmos/quantumVE/issues"
 
 [build-system]
 requires = ["setuptools>=61.0"]
