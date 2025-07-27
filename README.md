@@ -1,10 +1,8 @@
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
+[[LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://github.com/sebasmos/QuantumVE/) 
 
 # Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning
 
-> 🚧 This repository is under submission to IEEE QCE 2024.
-> 
 > 📩 **The full code will be made publicly available upon paper acceptance.**
 > 🔒 The code is currently archived under embargo at Zenodo: [https://zenodo.org/records/15264568](https://zenodo.org/records/15264568). Access is available upon request for review purposes.
 
