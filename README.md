@@ -3,8 +3,6 @@
 
 # Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning
 
-> 📩 **The full code will be made publicly available upon paper acceptance.**
-> 🔒 The code is currently archived under embargo at Zenodo: [https://zenodo.org/records/15264568](https://zenodo.org/records/15264568). Access is available upon request for review purposes.
 
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 💻 **Dataset on HuggingFace**: [*online*](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
