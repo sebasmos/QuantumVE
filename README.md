@@ -115,7 +115,7 @@ This work was supported by the **Google Cloud Research Credits program** under a
 
 ## 📄 License
 
-[CC BY-NC-SA 4.0](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE).
+[CC BY-NC-SA 4.0](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
 
 ## 📚 Citation
 
