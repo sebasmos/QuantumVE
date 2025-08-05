@@ -1,4 +1,4 @@
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sebasmos/QuantumVE/blob/main/LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://github.com/sebasmos/QuantumVE/) 
 [![arXiv](https://img.shields.io/badge/arXiv-2508.00024-b31b1b.svg)](https://arxiv.org/abs/2508.00024)
 
@@ -127,18 +127,6 @@ QuantumVE is **free** and **open source**, released under the [MIT License](http
   journal={arXiv preprint arXiv:2508.00024},
   year={2024},
   url={https://arxiv.org/abs/2508.00024}
-}
-```
-
-### Software
-```bibtex
-@software{Cajas2025_QSVM,
-  author = {Cajas Ordóñez, Sebastián Andrés and Torres Torres, Luis and Bifulco, Mario and Duran, Carlos and Bosch, Cristian and Simón Carbajo, Ricardo},
-  license = {MIT},
-  month = {apr},
-  title = {{Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning}},
-  url = {https://github.com/sebasmos/QuantumVE},
-  year = {2025}
 }
 ```
 
