@@ -1,8 +1,8 @@
 __pycache__/
 data/
 EXPERIMENTS/
-*.csv
-**/*.csv
+#*.csv
+#**/*.csv
 *.zip
 #**/*.txt
 outputs/
@@ -45,7 +45,7 @@ data
 *.ipynb_checkpoints
 **/*.ipynb_checkpoints
 /EXPERIMENTS
-figures/
+#figures/
 *.out
 **/*.pyc
 *.pyc
