@@ -9,6 +9,7 @@
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 📄 **Research Paper**: [Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning](https://arxiv.org/abs/2508.00024)
 - 💻 **Dataset on HuggingFace**: [QuantumEmbeddings](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
+- **Demo**: [Colab](https://github.com/sebasmos/QuantumVE/blob/main/Demo.ipynb)
 
 ## 🎯 Breakthrough Results
 
