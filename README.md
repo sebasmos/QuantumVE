@@ -5,7 +5,7 @@
 # QuantumVE: Quantum-Transformer Advantage Boost Over Classical ML
 
 **Breaking Discovery:** Vision Transformer embeddings unlock quantum machine learning advantage! First systematic proof that embedding choice determines quantum kernel success, revealing fundamental synergy between transformer attention and quantum feature spaces.
-
+- 🌐 **Project page**: [Link](https://sebasmos.github.io/embedding-aware-quantum/)
 - 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
 - 📄 **Research Paper**: [Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning](https://arxiv.org/abs/2508.00024)
 - 💻 **Dataset on HuggingFace**: [QuantumEmbeddings](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
