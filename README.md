@@ -1,23 +1,31 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://github.com/sebasmos/QuantumVE/) 
+[![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://github.com/sebasmos/QuantumVE/)
 [![arXiv](https://img.shields.io/badge/arXiv-2508.00024-b31b1b.svg)](https://arxiv.org/abs/2508.00024)
 
-# QuantumVE: Quantum-Transformer Advantage Boost Over Classical ML
+**Accepted for Poster, Presentation & Proceedings at:**
+**3rd International Workshop on AI for Quantum and Quantum for AI (AIQxQIA 2025)**, ECAI 2025, Bologna, Italy, 25–30 October 2025
 
-**Breaking Discovery:** Vision Transformer embeddings unlock quantum machine learning advantage! First systematic proof that embedding choice determines quantum kernel success, revealing fundamental synergy between transformer attention and quantum feature spaces.
-- 🌐 **Project page**: [Link](https://sebasmos.github.io/embedding-aware-quantum/)
-- 📂 **GitHub Repository**: [QuantumVE](https://github.com/sebasmos/QuantumVE)
-- 📄 **Research Paper**: [Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning](https://arxiv.org/abs/2508.00024)
-- 💻 **Dataset on HuggingFace**: [QuantumEmbeddings](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
-- **Demo**: [Colab](https://github.com/sebasmos/QuantumVE/blob/main/Demo.ipynb)
+# Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning
 
-## 🎯 Breakthrough Results
+**🚀 Key Discovery:**
+Vision Transformer (ViT) embeddings unlock quantum machine learning advantage. This is the **first systematic evidence** that the choice of embeddings determines quantum kernel success, showing a fundamental synergy between transformer attention and quantum feature spaces.
 
-- **8.02%** accuracy improvement on Fashion-MNIST vs classical SVMs
-- **4.42%** boost on MNIST dataset  
-- **First evidence** that ViT embeddings enable quantum advantage while CNN features show degradation
-- **16-qubit** tensor network simulation via cuTensorNet proving scalability
-- **Class-balanced k-means distillation** for efficient quantum processing
+### 🔗 Project Resources
+
+* **Project Page:** [Embedding-Aware Quantum](https://sebasmos.github.io/embedding-aware-quantum/)
+* **GitHub Repository:** [QuantumVE](https://github.com/sebasmos/QuantumVE)
+* **Research Paper:** [Embedding-Aware Quantum-Classical SVMs](https://arxiv.org/abs/2508.00024)
+* **Dataset on HuggingFace:** [QuantumEmbeddings](https://huggingface.co/datasets/sebasmos/QuantumEmbeddings)
+* **Interactive Demo:** [Colab Notebook](https://github.com/sebasmos/QuantumVE/blob/main/Demo.ipynb)
+
+### 🎯 Breakthrough Results
+
+* **Fashion-MNIST:** +8.02% accuracy vs classical SVM
+* **MNIST:** +4.42% accuracy boost
+* **Embedding Insights:** ViT embeddings enable quantum advantage; CNN features degrade performance
+* **Scalability:** 16-qubit tensor network simulation via cuTensorNet
+* **Efficiency:** Class-balanced k-means distillation for quantum data preprocessing
+
 
 ## Project Architecture
 
@@ -122,11 +130,14 @@ This work was supported by the **Google Cloud Research Credits program** under a
 
 ### Paper
 ```bibtex
-@article{Cajas2024_QuantumVE,
+@inproceedings{ordonez2025embedding,
   title={Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning},
-  author={Cajas Ordóñez, Sebastián Andrés and Torres Torres, Luis and Bifulco, Mario and Duran, Carlos and Bosch, Cristian and Simón Carbajo, Ricardo},
-  journal={arXiv preprint arXiv:2508.00024},
-  year={2024},
+  author={Ord{\'o}{\~n}ez, Sebasti{\'a}n Andr{\'e}s Cajas and Torres, Luis Fernando Torres and Bifulco, Mario and Duran, Carlos Andres and Bosch, Cristian and Carbajo, Ricardo Simon},
+  booktitle={3rd International Workshop on AI for Quantum and Quantum for AI (AIQxQIA 2025), ECAI 2025},
+  year={2025},
+  month={October},
+  address={Bologna, Italy},
+  note={Accepted for Poster, Presentation \& Proceedings},
   url={https://arxiv.org/abs/2508.00024}
 }
 ```

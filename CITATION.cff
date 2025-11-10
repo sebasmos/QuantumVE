@@ -27,3 +27,10 @@ keywords:
 repository-code: 'https://github.com/sebasmos/QuantumVE'
 license: CC BY-NC-SA 4.0
 date-released: '2025-07-28'
+conference:
+  name: "3rd International Workshop on AI for Quantum and Quantum for AI (AIQxQIA 2025)"
+  location: "Bologna, Italy"
+  date-start: "2025-10-25"
+  date-end: "2025-10-30"
+  parent: "ECAI 2025"
+notes: "Accepted for Poster, Presentation & Proceedings"
